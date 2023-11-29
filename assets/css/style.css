@@ -65,7 +65,10 @@
     box-sizing: border-box;
   }
   
-  a { text-decoration: none; }
+  a { 
+    text-decoration: none; 
+    color: inherit;
+  }
   
   li { list-style: none; }
   
@@ -122,8 +125,10 @@
   
   .img{
     max-width: 100%;
-    height: auto;
+
   }
+
+  
   
   .light-theme::-webkit-scrollbar-thumb { border-color: hsl(0, 0%, 90%); }
   
@@ -636,7 +641,7 @@ footer .wrapper { text-align: center; }
     
 
   
-  /*Header*/
+    /*Header*/
   
     header .btn-group { display: none; position: absolute;}
   
@@ -655,7 +660,14 @@ footer .wrapper { text-align: center; }
       color: var(--foreground-secondary);
       font-weight: 700;
     }
-  
+    
+
+    #nav-link{
+      color: var(--foreground-secondary);
+      font-weight: 500;
+    }
+
+    #nav-link:hover { color: var(--accent); }
     .desktop-nav .nav-link:hover { color: var(--accent); }
   
     .theme-btn-desktop {
@@ -749,7 +761,10 @@ footer .wrapper { text-align: center; }
       border-radius: 50%;
       transform: translate(-50%, -42%) rotate(-20deg);
     }
-  
+    
+
+
+
     .hero .shape-1 {
       background: var(--accent);
       width:  90%;
@@ -780,7 +795,7 @@ footer .wrapper { text-align: center; }
     section {
       margin-left: 220px;
       padding: 20px;
-  }
+    }
 
     article {
         margin-bottom: 20px;
@@ -813,7 +828,7 @@ footer .wrapper { text-align: center; }
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background: var(--background-primary);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -835,6 +850,10 @@ footer .wrapper { text-align: center; }
 
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+  
+  #escaperoom{
+    width: 140px;
+    float: right;
+  }
 
 }
