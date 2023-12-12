@@ -521,9 +521,11 @@ footer .wrapper { text-align: center; }
     }
   
     .blog-banner-img {
-      width:  100%;
-      height: 100%;
+      width: 241px;
       object-fit: cover;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
   
   }
